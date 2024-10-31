@@ -1,0 +1,15 @@
+{%extends 'layout.html'%}
+{% block body %}
+<h1>Reccommended Additions to your playlist</h1>
+
+<form method="post">
+    <button name="action" value="back">Try Another Playlist</button>
+    <button name="action", value="regenerate">Regenerate</button>
+</form>
+
+<ul>
+    {% for item in list %}
+        <li>{{ item }}</li>
+    {% endfor %}
+</ul>
+{% endblock %}
