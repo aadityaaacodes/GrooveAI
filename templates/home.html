@@ -1,0 +1,10 @@
+{%extends 'layout.html'%}
+{% block body %}
+<div class="container">
+    <h1>Enter Playlist URL</h1>
+    <form method="post">
+        <input type="url" name="playlistUrl" placeholder="Enter playlist URL" required>
+        <button type="submit">Submit</button>
+    </form>
+</div>
+{% endblock %}
